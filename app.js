@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 app.use(morgan("tiny"));
 app.use(authJWT());
 app.use(errorHandler);
-app.use('/public/uploads',express.static(path.join(__dirname,'../public/uploads')))
+app.use('/public/uploads',express.static(path.join(__dirname,'/public/uploads')))
 
 app.use(`${api}/Category`, CategoryRouter);
 app.use(`${api}/products`, ProductRouter);
