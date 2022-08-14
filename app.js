@@ -13,7 +13,6 @@ const path = require('path')
 
 require("dotenv").config({ path: ".env" });
 const api = process.env.APP_URL;
-console.log(api)
 
 app.use(cors());
 app.options("*", cors());
